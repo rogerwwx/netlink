@@ -28,10 +28,10 @@ jobs:
       - name: Rename Binary
         run: |
           mkdir -p output
-          cp target/aarch64-linux-android/release/mem_cleaner output/mem_cleaner
+          cp target/aarch64-linux-android/release/cn_proc_check output/cn_proc_check
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: mem_cleaner_arm64
-          path: output/mem_cleaner
+          name: cn_proc_check_arm64
+          path: output/cn_proc_check
